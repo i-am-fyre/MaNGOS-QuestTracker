@@ -13,22 +13,26 @@
       <thead>
         <tr>
           <th>Quest ID</th>
-          <th>Quest Name</th>
-          <th>Times Abandoned</th>
-          <th>Times Completed</th>
-          <th>Last Abandoned</th>
-          <th>Last Completed</th>
+          <th>Character GUID</th>
+          <th>Quest Accept Time</th>
+          <th>Quest Abandon Time</th>
+          <th>Quest Complete Time</th>
+          <th>Completed by GM</th>
+          <th>Core Hash</th>
+          <th>Core Revision</th>
         </tr>
       </thead>
       <tbody>
-        {% for questId, quest in quests.items() %}
+        {% for d in data %}
           <tr>
-            <td>{{ questId }}</td>
-            <td>{{ quest.quest_name }}</td>
-            <td>{{ abandoned_count[questId] }}</td>
-            <td>{{ completed_count[questId] }}</td>
-            <td>{{ quest.last_abandoned }}</td>
-            <td>{{ quest.last_completed }}</td>
+            <td>{{ d['id'] }}</td>
+            <td>{{ d['character_guid'] }}</td>
+            <td>{{ d['quest_accept_time'] }}</td>
+            <td>{{ d['quest_abandon_time'] }}</td>
+            <td>{{ d['quest_complete_time'] }}</td>
+            <td>{{ d['completed_by_gm'] }}</td>
+            <td>{{ d['core_hash'] }}</td>
+            <td>{{ d['core_revision'] }}</td>
           </tr>
         {% endfor %}
       </tbody>
