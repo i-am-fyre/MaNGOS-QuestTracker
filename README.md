@@ -2,7 +2,7 @@
 
 A simple web app to display quests accepted, abandoned, and completed in your server. This tool may assist developers with identifying quests that are frequently abandoned (likely broken!) or require GM assistance in completing (likely broken too!).
 
-In order to begin to populate your QuestTracker database table, make sure to enable Quest Tracker in the mangosd.conf from your MaNGOS server installation.
+In order to begin to populate your QuestTracker database table, make sure to have the latest version of your Mangos Server and enable Quest Tracker in the mangosd.conf.
 
 ```
 QuestTracker.Enable= 1
