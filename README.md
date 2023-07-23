@@ -4,6 +4,10 @@ A simple web app to display quests accepted, abandoned, and completed in your se
 
 In order to begin to populate your QuestTracker database table, make sure to enable Quest Tracker in the mangosd.conf from your MaNGOS server installation.
 
+```
+QuestTracker.Enable= 1
+```
+
 ## Getting Started
 
 These instructions will give you a copy of the project up and running on
