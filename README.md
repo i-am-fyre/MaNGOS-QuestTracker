@@ -31,7 +31,8 @@ You can set your database information in `config.ini`.
 
 Once the pre-requisites above have been installed and configurations are set, do the following:
 - `export FLASK_APP=main.py`
-- `flask run`
-Your local server should then be running at http://localhost:5000
+- `flask run --port=4831 --host=0.0.0.0`
+  
+Your local server should then be running at http://localhost:4831
 
-If you want to see raw data for all quests, go to: http://localhost:5000/all
+If you want to see raw data for all quests, go to: http://localhost:4831/all
