@@ -36,3 +36,4 @@ Once the pre-requisites above have been installed and configurations are set, do
 Your local server should then be running at http://localhost:4831
 
 If you want to see raw data for all quests, go to: http://localhost:4831/all
+- **Note:** Change "localhost" to the IP of your machine hosting the app.
